@@ -4,10 +4,7 @@ def my_select(collection)
   while i < collection.length
     if yield(collection[i]) == TRUE
       new_collection << collection[i]
+    end
     i = i + 1
-  end
-    array
-  else
-    puts "Hey! No block was given!"
   end
 end
